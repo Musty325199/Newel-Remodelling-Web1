@@ -13,14 +13,14 @@ const Navbar = () => {
   return (
     <div className="nav w-full fixed top-0 left-0">
         <div className="md:flex items-center justify-between bg-black md:bg-transparent py-4 md:px-10">
-        <div className="w-full md:w-[15%] font-bold pl-9 text-3xl   md:text-2xl cursor-pointer flex items-center font-semibold text-white">
+        <div className="w-full md:w-[15%] md:pl-9 px-3 text-2xl cursor-pointer flex items-center font-semibold text-white">
          Newel Residential Remodeling
         </div>
         <div onClick={()=>setShowMenu(!showMenu)} className="absolute right-8 top-6 cursor-pointer md:hidden">
             {showMenu ? 
-        <img width={40} height={40} src={assets.close_icon} alt="" />
+        <img width={22} height={22} src={assets.close_icon} alt="" />
             :
-        <img width={40} height={40}  src={assets.menu_icon} alt="" />
+        <img width={25} height={25}  src={assets.menu_icon} alt="" />
         }
         </div>
         <div className={`flex flex-col gap-5 md:flex-row pt-5 md:items-center md:pb-0 pb-12 absolute md:static bg-black md:bg-transparent md:z-auto z-[-1]

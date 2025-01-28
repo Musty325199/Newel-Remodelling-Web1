@@ -8,11 +8,11 @@ const Hero = () => {
     <div>
       <img className="hero" src={assets.hero_bg} alt="" />
       <div className="hero-overlay"></div>
-      <div className="absolute bottom-[40%] left-2 md:left-[25%]">
-        <h1 className="text-center text-5xl font-semibold text-white mb-3">
+      <div className="absolute z-[1000] bottom-[40%] left-2 md:left-[25%]">
+        <h1 className="text-center text-3xl font-bold md:text-5xl md:font-semibold text-white mb-3">
           Newel Residential Remodeling
         </h1>
-        <p className="text-center text-2xl md:text-3xl text-white">
+        <p className="text-center text-3xl mx-2 md:text-3xl text-white">
           Recreating Dream Homes That Last
         </p>
       </div>
@@ -27,7 +27,7 @@ const Hero = () => {
           >
             <img src={assets.hero_services_bg} alt="" />
           </div>
-          <div className="w-full md:w-2/4 py-5 px-[50px] text-white">
+          <div className="w-full md:w-2/4 py-5 text-center md:px-[50px] text-white">
             <h1 className="text-4xl font-semibold mb-3">Our Services</h1>
             <ul className="pl-2 text-xl mb-5">
               <li>* Complete Remodeling</li>
@@ -50,7 +50,7 @@ const Hero = () => {
             style={{ borderRight: "1px solid #feae97" }}
           >
             <img width={60} src={assets.house_icon} alt="" />
-            <p className="text-sm text-center md:text-xl font-semibold">
+            <p className="text-[10px] text-center md:text-xl font-semibold">
               Vast Experience
             </p>
           </div>
@@ -59,7 +59,7 @@ const Hero = () => {
             style={{ borderRight: "1px solid #feae97" }}
           >
             <img width={60} src={assets.team_icon} alt="" />
-            <p className="text-sm text-center md:text-xl font-semibold">
+            <p className="text-[10px] text-center md:text-xl font-semibold">
               Professional Team
             </p>
           </div>
@@ -68,7 +68,7 @@ const Hero = () => {
             style={{ borderRight: "1px solid #feae97" }}
           >
             <img width={60} src={assets.blocks_icon} alt="" />
-            <p className="text-sm text-center md:text-xl font-semibold">
+            <p className="text-[10px] text-center md:text-xl font-semibold">
               High Finish
             </p>
           </div>
@@ -79,7 +79,7 @@ const Hero = () => {
               src={assets.sustain_icon}
               alt=""
             />
-            <p className="text-sm text-center md:text-xl font-semibold">
+            <p className="text-[10px] text-center md:text-xl font-semibold">
               Sustainable & Accountable
             </p>
           </div>
@@ -89,11 +89,11 @@ const Hero = () => {
           style={{ border: "1px solid #feae97", borderTop: "none" }}
         >
           <div className="w-full md:w-2/4 py-5 px-3 md:px-[50px] text-white">
-            <h1 className="text-5xl font-semibold ml-2 mb-3">About Us</h1>
-            <p className="pl-2 text-3xl mb-5 text-[#feae97] md:w-2/4">
+            <h1 className="text-4xl font-semibold mb-3 text-center">About Us</h1>
+            <p className="pl-2 text-3xl mb-5 text-[#feae97] text-center">
               Newel Residential Remodeling
             </p>
-            <p className="pl-2 text-md md:text-lg mb-5 text-white">
+            <p className="pl-2 text-md text-justify md:text-lg mb-5 text-white">
               At <b>Newel Residential Remodeling</b>, we are passionate about
               transforming homes and commercial spaces into beautiful,
               functional, and personalized environments. With over{" "}
@@ -192,7 +192,7 @@ const Hero = () => {
             style={{ borderRight: "1px solid #feae97" }}
             className=" w-full md:w-[25%] flex flex-col py-[70px] px-[30px] justify-center text-white gap-10 items-center"
           >
-            <p className="text-xl md:text-sm">
+            <p className="text-xl text-justify md:text-sm">
               "We hired this team to remodel our outdated kitchen, and we
               couldn't be happier with the results! From the initial
               consultation to the final touches, they were professional,
@@ -202,14 +202,14 @@ const Hero = () => {
               work was completed on time. Our kitchen is now the heart of our
               home!"
             </p>
-            <p className="text-4xl text-[#feae97]">The Mathews</p>
+            <p className="text-4xl text-[#feae97] text-center">The Mathews</p>
           </div>
           <hr className="w-full md:hidden  bg-[#feae97] h-[1px] border-0 " />
           <div
             style={{ borderRight: "1px solid #feae97" }}
             className="w-full md:w-[25%] flex flex-col py-[70px] px-[30px] justify-center text-white gap-10 items-center"
           >
-            <p className="text-xl md:text-sm" >
+            <p className="text-xl md:text-sm text-justify" >
               "We wanted to turn our old, cramped bathroom into a spa-like
               retreat, and this team exceeded our expectations. The design
               process was smooth, and they offered creative ideas that fit our
@@ -217,11 +217,11 @@ const Hero = () => {
               communicated with us throughout the project. We love our new
               bathroom, and it has truly transformed our home!"
             </p>
-            <p className="text-4xl text-[#feae97]">Lars & Mary Williams</p>
+            <p className="text-4xl text-[#feae97] text-center">Lars & Mary Williams</p>
           </div>
           <hr className="w-full md:hidden  bg-[#feae97] h-[1px] border-0 " />
           <div className="w-full md:w-[25%] flex flex-col py-[70px] px-[30px] justify-center text-white gap-10 items-center">
-            <p className="text-xl md:text-sm">
+            <p className="text-xl md:text-sm text-justify">
               "After living in our home for over 20 years, we decided it was
               time for a major remodel. From the first consultation, the team
               was thoughtful and considerate of our vision. They revamped our
@@ -231,7 +231,7 @@ const Hero = () => {
               feels modern and fresh while keeping the warmth and comfort we’ve
               loved for years."
             </p>
-            <p className="text-4xl text-[#feae97]">Chris Parks</p>
+            <p className="text-4xl text-[#feae97] text-center">Chris Parks</p>
           </div>
         </div>
       </div>

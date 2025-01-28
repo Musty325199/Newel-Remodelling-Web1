@@ -9,35 +9,35 @@ const Footer = () => {
   return (
     <div className="flex flex-col md:flex-row w-full bg-black">
       <div className="flex flex-col px-10 gap-7 text-[#feae97]">
-        <h1 id="contact" className="text-4xl font-semibold">Contact Us</h1>
-        <div className="flex items-center gap-3 text-xl w-full md:w-3/4 ">
+        <h1 id="contact" className="text-4xl font-semibold text-center">Contact Us</h1>
+        <div className="flex items-center gap-3 text-xl w-full md:w-3/4 text-center ">
           <img width={30} src={assets.address} alt="" />
           <p>500 Terry Francine Street San Francisco, CA 94158</p>
         </div>
-        <div className="flex items-center gap-3 text-xl w-full md:w-3/4 ">
+        <div className="flex items-center gap-3 text-xl w-full md:w-3/4 text-center">
           <img width={30} src={assets.email} alt="" />
           <p>info@mysite.com</p>
         </div>
-        <div className="flex items-center gap-3 text-xl w-full md:w-3/4 ">
+        <div className="flex items-center gap-3 text-xl w-full md:w-3/4">
           <img width={30} src={assets.phone} alt="" />
           <p>123-456-7890</p>
         </div>
-        <div></div>
-        <div></div>
       </div>
       <form
         onSubmit={handleSubmit}
         className="flex flex-col px-10 gap-7 text-[#feae97]"
       >
-        <div className="flex gap-5 items-center">
+        <div className="mt-10">
           <label className="flex flex-col gap-5">
             First name
-            <input 
+            <input
               type="text"
               className="border-b border-[#feae97] outline-0 bg-transparent"
               required
             />
           </label>
+        </div>
+        <div>
           <label className="flex flex-col gap-5">
             Last name
             <input
@@ -57,15 +57,18 @@ const Footer = () => {
             />
           </label>
         </div>
-        <div className="flex gap-5 items-center">
+        <div>
           <label className="flex flex-col gap-5">
             Phone
             <input
               type="number"
+              maxLength={10}
               className="border-b border-[#feae97] outline-0 bg-transparent"
               required
             />
           </label>
+        </div>
+        <div>
           <label className="flex flex-col gap-5">
             Address
             <input
